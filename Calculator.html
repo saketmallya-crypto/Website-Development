@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caluculator</title>
+ 
+    </head>
+    <body>
+        <form action="/action_page.php" oninput="answer.value=parseInt(n1.value)*parseInt(n2.value)">
+
+            <fieldset>
+                <legend>Caluculator</legend>
+                <label>Enter two numbers</label><br>
+                <input type="number" id="n1" name="n1" placeholder="First number">
+                <label>*</label>
+                <input type="number" id="n2" name="n2" placeholder="Second number">
+                <button>=</button>
+                <output name="answer" for="n1 n2" ></output>
+            </fieldset>
+        </form>
+    </body>
+</html>
