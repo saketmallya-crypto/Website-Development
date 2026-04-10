@@ -2,6 +2,15 @@
 <html>
     <head>
         <title>Feedback</title>
+        <style>
+            /*This is an element selector*/
+            label{
+                color:cadetblue
+            }
+            fieldset{
+                border:5px dashed
+            }
+        </style>
     </head>
     <body>
         <form>
@@ -10,13 +19,13 @@
                 <label> Teacher Name</label><br>
                 <input type="text" id="teacher-name" placeholder="Enter your full name"><br><hr>
                 <label>Teacher Email</label><br>
-                <input type="email" id="email" value="xyz@gmail.com"><br>
+                <input type="email" id="email" value="xyz@gmail.com"><br><hr>
                 <label> Teacher Age</label><br>
-                <input type="number" id="age" required><br>
+                <input type="number" id="age" required><br><hr>
                 <label>Select your Date of Birth</label><br>
-                <input type="date" id="date-of-birth" name="dob"><br>
+                <input type="date" id="date-of-birth" name="dob"><br><hr>
                 <label>Gender</label><br>
-                <input type="radio" id="Female" name="Gender">Female<br>
+                <input type="radio" id="Female" name="Gender">Female<br><hr>
                 <input type="radio" id="Male" name="Gender">Male<br>
                 <label> Subjects Taught</label><br>
                 <input type="checkbox" id="Math" name="Subject"> Math<br>
