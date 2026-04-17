@@ -2,6 +2,20 @@
 <html>
 <head>
     <title>Lists</title>
+    <style>
+        ol>li{
+            color:green;
+        }
+        li:nth-child(2)
+        {background-color: yellow;
+
+        }
+        /*This is a not selector*/
+        li:not(#vegetable)
+        {
+            background-color: oldlace;
+        }
+    </style>
 </head>
 <body>
 <h1>Ordered Lists</h1>
@@ -30,6 +44,33 @@
 </dl>
 
 
+
+<ul>
+    <li>
+        Fruits
+        <ol>
+          <li>  Mango</li>
+          <li> Jackfruit</li>
+          <li>Lychee</li>
+        </ol>
+    </li>
+    <li id="vegetable"> Vegetables
+        <ol>
+            <li>
+                Carrots
+            </li>
+            <li> Cabbage</li>
+            <li> Okra</li>
+        </ol>
+    </li>
+    <li>Spices
+        <ol>
+            <li> Chilli powder</li>
+            <li>Garam Masala</li>
+            <li>Pepper</li>
+        </ol>
+    </li>
+</ul>
 </body>
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Selectors</title>
+        <style>
+            /*This is a group selecotr*/
+            h1,p{
+                text-decoration: underline;
+            }
+            /*This is sibling selector*/
+            h1+p{
+                background-color: aquamarine;
+            }
+            /*This is pseudo elements*/
+            .h1::before{
+                content:":)";
+            }
+            p::first-letter{
+                font-size:300%;
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="h1">
+            Hello I am heading 1
+        </h1>
+        <p>Hello I am paragraph 1</p>
+        <p>hello iam paragraph 2</p>
+        <h1>Hello i am heading 2</h1>
+        <p>Hello i am paragraph 3</p>
+    </body>
+</html>
