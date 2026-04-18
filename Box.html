@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Box</title>
+        <style>
+            .box1{
+                /*This is a content*/
+                width: 150px;
+                height:100px;
+                background-color: aquamarine;
+                /*This is padding-space inside the box*/
+                padding-left:50px;
+                /*It is the edge around the padding and content*/
+                border: 5px dashed cornflowerblue;
+                /*It is th space outside the box*/
+                margin-top: 50px;
+            }
+             .box2{
+                /*This is a content*/
+                width: 150px;
+                height:100px;
+                background-color: aquamarine;
+                /*This is padding-space inside the box*/
+                padding-left:50px;
+                /*It is the edge around the padding and content*/
+                border: 5px dashed cornflowerblue;
+                /*It is th space outside the box*/
+                margin-top: 50px;
+                /*Padding and border are included in the width/height*/
+                box-sizing: border-box;
+            }
+            img#right{
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            I am content
+        </div>
+        <div class="box2">
+            I am content
+        </div>
+        <p>
+            <img src="fridge.jpg" id="left">
+            <img src="DPS.png" id="right">
+            Hello i am paragraph
+        </p>
+    </body>
+</html>
