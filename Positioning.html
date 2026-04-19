@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> POSITIONING IN HTML</title>
+       <style>
+        body{
+            height:2000px;
+        }
+        .box1{
+            background-color: cadetblue;
+            position:static;
+            right:100px;
+            width: 150px;
+            height: 100px;
+        }
+        .box2{
+            background-color:greenyellow ;
+            position:fixed;
+            right:100px;
+            width: 150px;
+            height: 100px;
+        }
+        .box3{
+            background-color:greenyellow ;
+            position:relative;
+            left: 150px;
+            width: 150px;
+            height: 100px;
+        }
+        .box4{
+            background-color:rgb(47, 255, 241) ;
+            position:absolute;
+            right:100px;
+            width: 150px;
+            height: 100px;
+        }
+        .box5{
+            background-color:rgb(47, 99, 255) ;
+            position:sticky;
+            top: 0px;
+            width: 150px;
+            height: 100px;
+        }
+       </style>
+    </head>
+    <body>
+        <div class="box1">
+            This is static positioning
+        </div>
+        <div class="box2">
+            This is fixed positioning
+        </div>
+        <div class="box3">
+            This is relative positioning
+        </div>
+        <div class="box4">
+            This is absolute positioning
+        </div>
+        <div class="box5">
+            This is sticky positioning
+        </div>
+    </body>
+</html>
