@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Typography</title>
+        <title>Book My Trip</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            article{
+            width:60%;
+            margin:40px;
+            padding:20px;
+            background-color:beige;
+            box-shadow: 2px 5px 10px grey;
+            
+        }
+        .footerimg{
+            width:50px;
+            height: 50px;
+
+        }
+        
+        </style>
     </head>
     <body>
         <!--header-->
         <header class="container bg-info text-center px-5">
 
             <h1 class="display-1">Book My Trip</h1>
-            <p class="text-light lead fs-3 fst-italic text-lowercase">This website allows you to book your tickets to your dream destination at reasonable prices.</p>
-            <p class="text-muted"> I am muted text</p>
+            <p class="text-light lead fs-3 fst-italic text-capitalize">This website allows you to book your tickets to your dream destination at reasonable prices.</p>
+            <mark>Special Offer!75% off</mark>
             <!--navigation-->
             <nav>
-
+                <ul>
+                    <li>
+                    <button><a href="Flight.html">Flights</a></button>
+                    
+                </li>
+                <li>
+                    <button><a href="Train.html"> Trains</a></button>
+                </li>
+                <li>
+                    <button><a href="Bus.html">Buses</a></button>
+                </li>    
+            </ul>
+                
             </nav>
         </header>
-        
+        <main>
+            <section>
+                <article>
+                    Want to have fun with the family ?<br>
+                Bali calls you.<br>Just 7 hours away with Air India.
+                </article>
+                
+            </section>
+        </main>
+        <footer class="container-fluid bg-dark align-items-center d-flex">
+            <h2 class="display-5 text-light">Follow us on</h2>
+            <img class="footerimg mx-2"src="instagram.png ">
+            <img class="footerimg mx-2"src="X.png ">
+        </footer>
     </body>
 </html>
