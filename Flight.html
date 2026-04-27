@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Flights
-        </title>
+        <title>Flights</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+         <style>
+            /*This is an element selector*/
+            label{
+                color:cadetblue
+            }
+            fieldset{
+                border:5px dashed
+            }
+            /*This is an attribute selector*/
+            input[
+                type="checkbox"
+                
+            ]
+            {
+               width:30px;
+               height:20px;
+                color: aquamarine;
+                outline:5px cadetblue;
+            }
+            /*Pseudo Classes*/
+            input:focus{
+                border:4px solid cadetblue;
+            }
+        </style>
     </head>
-    <body style="background-color: bisque;">
-        <!--Hero section-->
+    <body>
+             <form>
+           <fieldset>
+                <legend> Book Your Overseas Getaway</legend>
+                <label> From:</label><br>
+                <input type="text" id="Starting point" placeholder="Enter starting point"><br>
+                <label>To:</label><br>
+                <input type="ttext" id="destination" placeholder="Enter destination"><br><hr>
+                <label> Full Name</label><br>
+                <input type="text" id="name" required><br><hr>
+                <label>Date</label><br>
+                <input type="date" id="date" name="date"><br><hr>
+                <label>Gender</label><br>
+                <input type="radio" id="Female" name="Gender">Female<br>
+                <input type="radio" id="Male" name="Gender">Male<br>
+               <label>Type of Flight</label><br>
+                <input type="radio" id="Direct" name="Gender">Direct<br>
+                <input type="radio" id="Connecting" name="Gender">Connecting<br><hr>
+                <label>Layover Airport</label>
+                <input type="text" id="Layover" name="Layover"><br><hr>
+                <label>Airline</label>
+                <input type="text" id="Airline" name="Airline"><br><hr>
+                <button type="Submit">Book</button>
+                
+           </fieldset> 
+        </form>
     </body>
 </html>
