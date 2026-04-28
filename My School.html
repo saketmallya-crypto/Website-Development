@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> My School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         /*This is universal selector*/
         *{
@@ -55,18 +56,32 @@
 
     <!--Navigation-->
     
-    <nav>
-        <ul>
-            <li>
-                <button> <a href="#"> Admissions</a></button>
+    <nav class="navbar navbar-expand-lg navbar-info">
+        <div class="container-fluid p-3 mx-5">
+            <!-- Toggle -->
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+<div class="collapse navbar-collapse " id="navbarNav">
+     <ul class="navbar-nav ">
+            <li class="nav-item">
+                <button class="btn btn-success m-3"> <a class="nav-link" href="#"> Admissions</a></button>
             </li>
-            <li>
-                <button><a href="#"> Returns and Orders</a></button>
+            <li class="nav-item">
+                <button class="btn btn-success m-3"><a class="nav-link" href="#"> Returns and Orders</a></button>
+                
             </li>
-            <li>
-                <button><a href="#">Cart</a></button>     
+            <li class="nav-item">
+                <button class="btn btn-success m-3"><a class="nav-link" href="#">Cart</a></button>     
                    </li>
         </ul><hr>
+</div>
+           
+        </div>
+        
     </nav>
 
 
