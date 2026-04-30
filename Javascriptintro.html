@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Introduction to Javascript
+        </title>
+    </head>
+    <body>
+        <h1 id="heading1"></h1>
+        <h2 id="heading2">Welcome to Codingal</h2>
+        <input id="nameinput" type="text" placeholder="Enter your name">
+        <button onclick="showname()">Submit</button>
+        <script>
+            //This is variable declaration
+            var number1;
+            //this is variable initialization
+            number1=7;
+            //this is variable declaration and initialization
+            var number2=10;
+            var answer=number1+number2;
+            function showname(){
+                 var name=document.getElementById("nameinput").value;
+                  document.getElementById("heading2").innerText+=name;
+            }
+            document.getElementById("heading1").innerHTML=number1+"+"+number2+"="+answer;
+
+            
+        </script>
+    </body>
+</html>
