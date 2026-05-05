@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caluculator</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container bg-info">
+            <input type="number" id="n1" placeholder="Enter the first number">
+            <span class="badge" id="operation">+</span>
+            <input type="number" id="n2" placeholder="Enter the second number">
+            <span id="result" class="badge bg-warning">0</span><br>
+            <button class="btn btn-warning" onclick="subtraction()">Subtract</button> 
+            <button class="btn btn-warning" onclick="addition()">Add</button>
+
+        </div>
+        <script>
+        function addition(){
+             let n1=document.getElementById("n1").value;
+             let n2=document.getElementById("n2").value;
+             let answer=Number(n1)+Number(n2);
+             document.getElementById("operation").innerHTML="+";
+            document.getElementById("result").innerText=answer;
+        }
+        function subtraction(){
+            let n1=document.getElementById("n1").value;
+            let n2=document.getElementById("n2").value;
+            let answer=n1-n2;
+             document.getElementById("operation").innerHTML="-";
+            document.getElementById("result").innerText=answer;
+        }
+    </script>
+    </body>
+    
+</html>
