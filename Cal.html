@@ -6,12 +6,20 @@
     </head>
     <body>
         <div class="container bg-info">
-            <input type="number" id="n1" placeholder="Enter the first number">
-            <span class="badge" id="operation">+</span>
-            <input type="number" id="n2" placeholder="Enter the second number">
-            <span id="result" class="badge bg-warning">0</span><br>
-            <button class="btn btn-warning" onclick="subtraction()">Subtract</button> 
-            <button class="btn btn-warning" onclick="addition()">Add</button>
+            <div class="row">
+                <div class="col-4"> <input type="number" id="n1" placeholder="Enter the first number"></div>
+                <div class="col-2">  <span class="badge" id="operation">+</span></div>
+                <div class="col-4"> <input type="number" id="n2" placeholder="Enter the second number"></div>
+                <div class="col-2"> <span id="result" class="badge bg-warning">0</span><br></div>
+            </div>
+            <div class="row">
+            <div class=col-6><button class="btn btn-warning" onclick="addition()">Add</button> </div>
+            <div class=col-6><button class="btn btn-warning" onclick="subtraction()">Subtract</button> </div>
+            </div>
+            <div class="row">
+            <div class=col-6><button class="btn btn-warning" onclick="multiplication()">Multiply</button> </div>
+            <div class=col-6><button class="btn btn-warning" onclick="division()">Divide</button> </div>
+            </div>
 
         </div>
         <script>
@@ -25,8 +33,22 @@
         function subtraction(){
             let n1=document.getElementById("n1").value;
             let n2=document.getElementById("n2").value;
-            let answer=n1-n2;
+            let answer=Number(n1)-Number(n2);
              document.getElementById("operation").innerHTML="-";
+            document.getElementById("result").innerText=answer;
+        }
+        function multiplication(){
+            let n1=document.getElementById("n1").value;
+            let n2=document.getElementById("n2").value;
+            let answer=Number(n1)*Number(n2);
+             document.getElementById("operation").innerHTML="*";
+            document.getElementById("result").innerText=answer;
+        }
+        function division(){
+            let n1=document.getElementById("n1").value;
+            let n2=document.getElementById("n2").value;
+            let answer=Number(n1)/Number(n2);
+             document.getElementById("operation").innerHTML="/";
             document.getElementById("result").innerText=answer;
         }
     </script>
