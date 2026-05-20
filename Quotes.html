@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container">
+            <h2>Random Quote Generator</h2>
+             <p id="quote">Click on button to generate quotes</p>
+             <button onclick="generate()">Click Me</button>
+        </div>
+        <script>
+            function generate(){
+                let quotes=["Success is not final, failure is not fatal.",
+
+"Dream big and dare to fail.",
+
+"Believe you can and you're halfway there.",
+
+"Push yourself because no one else will.",
+
+"Stay hungry, stay foolish.",
+
+"Code is like humor. When you have to explain it, it’s bad."];
+                let random_index=Math.floor(Math.random()*quotes.length);
+                document.getElementById("quote").innerText=quotes[random_index];
+            }
+
+        </script>
+    </body>
+</html>
