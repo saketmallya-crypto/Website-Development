@@ -30,12 +30,12 @@
     </head>
     <body>
              <form>
-           <fieldset>
+           <fieldset id="fieldset">
                 <legend> Book Your Overseas Getaway</legend>
                 <label> From:</label><br>
                 <input type="text" id="Starting point" placeholder="Enter starting point"><br>
                 <label>To:</label><br>
-                <input type="ttext" id="destination" placeholder="Enter destination"><br><hr>
+                <input type="text" id="destination" placeholder="Enter destination"><br><hr>
                 <label> Full Name</label><br>
                 <input type="text" id="name" required><br><hr>
                 <label>Date</label><br>
@@ -50,10 +50,11 @@
                 <input type="text" id="Layover" name="Layover"><br><hr>
                 <label>Airline</label>
                 <input type="text" id="Airline" name="Airline"><br><hr>
-                <button type="Submit">Book</button>
+                
                 
            </fieldset> 
         </form>
+        <button type="Submit" id="book" onclick="submit()">Book</button>
         <script>
             //homework of object and array
             var flights=[
@@ -80,6 +81,16 @@
             },
              
         ]
+            //writing code for submit button
+            function submit(){
+                //creating element
+                let div=document.createElement('div');
+                div.innerHTML="<p>Your flight has been booked successfully</p>";
+                document.body.append(div);
+                document.getElementById("destination").innerHTML="";
+            }
+
+
         </script>
     </body>
 </html>
