@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Car{
+                //creating constructor
+                constructor(carname){
+                    this.name=carname;
+                    this.color="blue";
+                }
+                //method is a function inside a class
+                Describe(){
+                    document.write("I am" +this.name);
+                    document.write(this.color);
+                }
+                checkmileage(mileage){
+                    document.write("Mileage of "+this.name + " is" + mileage);
+                    document.write("<br>");
+                }
+            }
+            //creating object
+            var SUV=new Car("SUV");
+            SUV.checkmileage(18);
+            //calling a method using object
+            SUV.Describe();
+            var Sedan=new Car("Sedan");
+            Sedan.checkmileage(20);
+            Sedan.Describe();
+            
+
+
+
+
+        </script>
+        
+    </body>
+</html>

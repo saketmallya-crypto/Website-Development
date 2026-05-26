@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .card{
+                background-color:bisque;
+                text-align:center;
+                border:3px solid orange;
+                margin:5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cards">
+            <div id="card1">
+
+            </div>
+            <div id="card2">
+                
+            </div>
+            <div id="card3">
+                
+            </div>
+        </div>
+            <script>
+                
+                class Planet{
+                    constructor(name,fact){
+                        this.name=name;
+                        this.fact=fact;
+                        
+                    }
+                    //method
+                    Describe(){
+                        return this.name+":"+this.fact;
+                    }
+                }
+                //creating object
+                var p1=new Planet("Earth","This is the only planet where there is life.");
+                var p2=new Planet("Jupiter","This is the largest planet");
+                var p3=new Planet("Mercury","This is the planet closest to the sun");
+                
+                document.getElementById("card1").innerHTML="<div class='card'><div class='planetname'>"+p1.name + "</div>"+"<div class='planetfact'>"+p1.Describe()+"</div>"+"</div>";
+                document.getElementById("card2").innerHTML="<div class='card'><div class='planetname'>"+p2.name + "</div>"+"<div class='planetfact'>"+p2.Describe()+"</div>"+"</div>";
+                document.getElementById("card3").innerHTML="<div class='card'><div class='planetname'>"+p3.name + "</div>"+"<div class='planetfact'>"+p3.Describe()+"</div>"+"</div>";
+                
+            </script>
+        </body>
+</html>
