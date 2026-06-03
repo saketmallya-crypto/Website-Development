@@ -49,6 +49,7 @@
         <div class="container">
              <button onclick="lowtohigh()">Prices Low to High</button>
             <button onclick="hightolow()">Prices High to Low</button>
+            <button onclick="sortairline()">Sort By Airline</button>
         </div>
          
            
@@ -108,6 +109,10 @@
              function hightolow(){
                 flights.sort((a,b)=>b.price-a.price);
                 displayflights();
+            }
+            function sortairline(){
+                flights.sort((a,b)=>a.airline.localeCompare(b.airline));
+                displayflights()
             }
         </script>
     </body>
