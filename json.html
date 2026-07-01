@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="box">
+            <h1>Delivery Tracker</h1>
+            <button onclick="saveorder()">Save Order</button>
+            <button onclick="startdelivery()">Start Delivery</button>
+            <h1>Original Product Details</h1>
+            <p id="details"></p>
+            <p id="deliverystatus"></p>
+        </div>
+    </body>
+    <script>
+        var product1={
+            product_name:"laptop",
+            price:65000,
+            customer_name:"Saket",
+        }
+        function saveorder(){
+            document.getElementById("details").innerHTML=JSON.stringify(product1)
+        }
+        
+function wait(ms){
+
+return new Promise(resolve=>{
+
+setTimeout(resolve,ms);
+
+});
+
+}
+        async function startdelivery(){
+            let deliverystatus=document.getElementById("deliverystatus");
+            deliverystatus.innerHTML= "Order Confirmed";
+            await wait(2000);
+            deliverystatus.innerHTML= "Order Packed";
+            await wait(2000);
+            deliverystatus.innerHTML= "Out For Delivery";
+            await wait(2000);
+            
+            
+
+            
+        }
+    </script>
