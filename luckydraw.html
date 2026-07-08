@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Lucky Draw</h1>
+        <p>Enter your name and guess a number</p>
+        <input id="name_input" type="text" placeholder="Enter your name"><br>
+        <p id="name_msg"></p>
+        <input id="number_input" type="number" placeholder="Enter a number from 1-5"><br>
+        <p id="num_msg"></p>
+        <button id="enterguess" onclick="check()">Try My Luck</button>
+        <h3 id="result"></h3>
+        <script>
+        
+          function check(){
+             var name = document.getElementById("name_input").value;
+          var number = document.getElementById("number_input").value;
+            if (name==""){
+                document.getElementById("name_msg").innerText="Please enter your name";
+
+                }
+                else{
+                    document.getElementById("name_msg").innerText="";
+
+            }
+            var lucky_number=Math.floor(Math.random()*5+1);
+            if (number==lucky_number){
+                document.getElementById("result").innerText="You Win";
+            }
+            else{
+                document.getElementById("result").innerText="Better luck next time";
+            }
+          }
+        </script>
+    </body>
+</html>
